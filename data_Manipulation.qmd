@@ -1,0 +1,58 @@
+---
+title: "Manipulação de Dados"
+author: "Hugo Silva e Raquel Teixeira"
+affiliation: 
+    - Escola Nacional de Saúde Pública
+date: today
+date-format: long
+lang: pt 
+format:
+  html:
+    preview: false
+    smooth-scroll: true
+    embed-resources: true
+    toc: true
+    toc-location: left
+    number-sections: true
+    number-depth: 3
+    code_download: true
+    code-copy: true
+execute:
+  warning: false
+  collapse: true
+  message: false
+  eval: true
+  echo: true
+title-block-style: default
+theme: templata_ensp
+editor: 
+  markdown: 
+    wrap: 72
+project:
+  output-dir: outputs/documents
+---
+
+```{r}
+required_packages <- c("janitor",
+                       "tidyverse",
+                       "rio",
+                       "here",
+                       "haven",
+                       "data.table",
+                       "lubridate",
+                       "readxl"
+                       )      
+
+for (pkg in required_packages) {
+  # install packages if not already present
+  if (!pkg %in% rownames(installed.packages())) {
+    install.packages(pkg)
+  }
+  
+  # load packages to this current session 
+  library(pkg, character.only = TRUE)
+}
+remove(required_packages)
+remove(pkg)
+```
+
