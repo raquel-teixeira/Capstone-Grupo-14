@@ -56,7 +56,15 @@ remove(required_packages)
 remove(pkg)
 ```
 
-Teste
+# Carregar a base de dados
 
+```{r}
+
+inquerito_AVC_2024 <- read_excel("datasets/inquerito_AVC_2024_processed.xlsx") %>% 
+  clean_names()
+
+
+
+```
 
 
