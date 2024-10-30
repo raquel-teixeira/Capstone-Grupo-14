@@ -94,3 +94,17 @@ summary_inquerito_by_agrupamento <- inquerito_AVC_2024 %>%
 summary_inquerito_by_agrupamento
 ```
 
+
+```{r}
+grafico_alunos_por_agrupamento <- ggplot(data = summary_inquerito_by_agrupamento, aes(x = agrupamento_escolas,
+                                                    y = count))+
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(title = "Número de alunos por agrupamento",
+       x = "Agrupamento",
+       y = "Alunos") +
+  theme_minimal()
+  
+grafico_alunos_por_agrupamento  
+
+```
+
