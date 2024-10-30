@@ -121,6 +121,3 @@ grafico_alunos_por_ucc <- ggplot(data = summary_inquerito_by_ucc, aes(x = ucc,
 grafico_alunos_por_ucc 
 
 ```
-
-
-g
