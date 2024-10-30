@@ -17,6 +17,8 @@ format:
     number-depth: 3
     code_download: true
     code-copy: true
+    output-file: data_Manipulation.html
+    output-dir: output/documents
 execute:
   warning: false
   collapse: true
@@ -28,8 +30,8 @@ theme: templata_ensp
 editor: 
   markdown: 
     wrap: 72
-project:
-  output-dir: outputs/documents
+output-dir: output/documents
+
 ---
 
 ```{r}
