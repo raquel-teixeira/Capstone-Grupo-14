@@ -121,3 +121,17 @@ grafico_alunos_por_ucc <- ggplot(data = summary_inquerito_by_ucc, aes(x = ucc,
 grafico_alunos_por_ucc 
 
 ```
+
+```{r}
+distribuicao_sexo <- ggplot(inquerito_AVC_2024, aes(x = sexo, fill = sexo)) +
+  geom_bar() +
+  labs(title = "Distribuição por Sexo",
+       x = "Sexo",
+       y = "Contagem") +
+  scale_fill_manual(values = c("Masculino" = "#4287f5", "Feminino" = "#f542a7")) +
+  theme_minimal()
+
+distribuicao_sexo
+
+```
+
