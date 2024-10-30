@@ -108,3 +108,16 @@ grafico_alunos_por_agrupamento
 
 ```
 
+
+```{r}
+grafico_alunos_por_ucc <- ggplot(data = summary_inquerito_by_ucc, aes(x = ucc,
+                                                    y = count))+
+  geom_bar(stat = "identity", fill = "#de3e3e") +
+  labs(title = "Número de alunos por UCC",
+       x = "UCC",
+       y = "Alunos") +
+  theme_minimal()
+  
+grafico_alunos_por_ucc 
+
+```
