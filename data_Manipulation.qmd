@@ -33,6 +33,8 @@ project:
 ---
 
 ```{r}
+rm(list = ls(all.names = TRUE)) # limpa todos os objetos, incluindo os ocultos
+
 required_packages <- c("janitor",
                        "tidyverse",
                        "rio",
@@ -63,8 +65,32 @@ remove(pkg)
 inquerito_AVC_2024 <- read_excel("datasets/inquerito_AVC_2024_processed.xlsx") %>% 
   clean_names()
 
+names(inquerito_AVC_2024)
 
+```
+```{r}
+nrow(inquerito_AVC_2024)
 
 ```
 
+```{r}
+
+summary_inquerito_by_ucc <- inquerito_AVC_2024 %>% 
+  summarise(
+    count = n(),
+.by = ucc
+  )
+
+summary_inquerito_by_ucc
+
+```
+```{r}
+summary_inquerito_by_agrupamento <- inquerito_AVC_2024 %>% 
+  summarise(
+    count = n(),
+.by = agrupamento_escolas
+  )
+
+summary_inquerito_by_agrupamento
+```
 
