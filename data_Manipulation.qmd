@@ -46,7 +46,10 @@ required_packages <- c("janitor",
                        "haven",
                        "data.table",
                        "lubridate",
-                       "readxl"
+                       "readxl",
+                       "broom",
+                       "gt",
+                       "gtsummary"
                        )      
 
 for (pkg in required_packages) {
