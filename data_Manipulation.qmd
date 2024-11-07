@@ -81,14 +81,23 @@ inquerito_AVC_2024$altura_questionario <- factor(inquerito_AVC_2024$altura_quest
 ```
 
 ```{r}
-nrow(inquerito_AVC_2024)
 
-n_row <- nrow(inquerito_AVC_2024)
+n_row_pre <- inquerito_AVC_2024 %>%
+  filter(altura_questionario == "Pré-Intervenção") %>%
+  nrow()
+
+n_row_pos <- inquerito_AVC_2024 %>%
+  filter(altura_questionario == "Pós-intervenção") %>%
+  nrow()
 
 ```
 
-No total, foram realizados `r n_row` inquéritos.
+::: callout-important
+## Total de inquéritos
 
+No total, foram realizados `r n_row_pre` inquéritos pré intervenção e
+`r n_row_pos`inquéritos pós intervenção.
+:::
 
 # Explorar a base de dados
 
@@ -144,9 +153,7 @@ str(inquerito_AVC_2024$sexo_alterado)
 
 ```
 
-
-
-# Visualização dos dados 
+# Visualização dos dados
 
 ## Contagem de inquéritos respondidos por UCC pré e pós-intervenção
 
@@ -204,5 +211,3 @@ distribuicao_sexo <- ggplot(inquerito_AVC_2024, aes(x = sexo_alterado, fill = se
 distribuicao_sexo
 
 ```
-
-
