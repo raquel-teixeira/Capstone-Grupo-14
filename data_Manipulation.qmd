@@ -181,3 +181,19 @@ distribuicao_sexo <- ggplot(inquerito_AVC_2024, aes(x = sexo, fill = sexo)) +
 distribuicao_sexo
 
 ```
+
+
+```{r}
+tabela1 <- tbl_summary(
+  inquerito_AVC_2024,
+  include = c(ucc, sexo, agrupamento_escolas, numero_emergencia), # Selecionar variáveis específicas para o resumo
+  by = altura_questionario, # Dividir a tabela pelo estado da doença cardíaca
+  missing = "no" # Excluir dados ausentes do resumo
+) |> 
+  modify_spanning_header(c("stat_1", "stat_2") ~ "**Intervenção**") |> 
+  add_n() |>  # Adicionar uma coluna para contar observações não ausentes
+  add_p() |>  # Realizar testes estatísticos para comparar grupos
+  modify_header(label = "**Variable**") # Personalizar o cabeçalho da tabela
+
+tabela1
+```
