@@ -28,6 +28,23 @@ project:
 
 O projeto **Dias Comemorativos: Prevenção do AVC** tem como objetivo aumentar a literacia em saúde da comunidade escolar relativamente ao **Acidente Vascular Cerebral (AVC)**. Para isso, disponibiliza um conjunto de recursos de apoio a profissionais de educação, saúde e outros, de modo a abordarem o tema AVC de forma coerente, sustentada e estruturada ao longo do ano letivo.
 
+## Onde foi realizado o projeto
+
+### No Extinto ACES Maia/Valongo
+
+O Extinto Agrupamento de Centros de Saúde do Grande Porto III – Maia/Valongo resultou da fusão dos anteriores ACeS da Maia e Valongo, conforme a Portaria nº 310/2012, de 10 de outubro.
+
+Abrangia os concelhos da Maia e Valongo, com uma população de 229.164
+residentes, distribuídos por 14 freguesias. Corresponde a uma área geográfica de 158,27 km2, com uma densidade populacional de 1447,93 hab./Km2.
+O total de inscritos era de 217.516, dos quais 201.698 (92,7%) integrados em USF.
+
+O ACeS Maia/Valongo integrava todas as unidades funcionais previstas no Decreto-Lei nº28/2008, de 22 de fevereiro.
+
+Era composto por 30 unidades, distribuídas por 16 Unidades de Saúde Familiar, 3 Unidades de Cuidados de Saúde Personalizados, 5 Unidade de Cuidados na Comunidade, 1 Unidade de Recursos Assistenciais Partilhados, 1 Unidade de Saúde Pública, 1 Centro Diagnóstico Pneumológico (pólos em Valongo e Maia), e ainda 2 Serviços de Atendimento a Situações Urgentes (a funcionar em Ermesinde e Maia).
+
+![Mapa da Área Metropolitana do
+Porto](images/Mapa_AMP.jpg){fig-align="center"}
+
 ## Porquê o AVC?
 
 O AVC é a primeira causa de morte em Portugal e foi identificado no Plano Local de Saúde Maia/Valongo como uma das áreas de intervenção prioritária nos municípios da Maia e de Valongo, para os anos de 2023 a 2025.

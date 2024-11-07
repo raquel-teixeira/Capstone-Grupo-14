@@ -65,25 +65,10 @@ remove(required_packages)
 remove(pkg)
 ```
 
-# O Extinto ACES Maia/Valongo
-
-O Extinto Agrupamento de Centros de Saúde do Grande Porto III – Maia/Valongo resultou da fusão dos anteriores ACeS da Maia e Valongo, conforme a Portaria nº 310/2012, de 10 de outubro.
-
-Abrangia os concelhos da Maia e Valongo, com uma população de 229.164
-residentes, distribuídos por 14 freguesias. Corresponde a uma área geográfica de 158,27 km2, com uma densidade populacional de 1447,93 hab./Km2.
-O total de inscritos era de 217.516, dos quais 201.698 (92,7%) integrados em USF.
-
-O ACeS Maia/Valongo integrava todas as unidades funcionais previstas no Decreto-Lei nº28/2008, de 22 de fevereiro.
-
-Era composto por 30 unidades, distribuídas por 16 Unidades de Saúde Familiar, 3 Unidades de Cuidados de Saúde Personalizados, 5 Unidade de Cuidados na Comunidade, 1 Unidade de Recursos Assistenciais Partilhados, 1 Unidade de Saúde Pública, 1 Centro Diagnóstico Pneumológico (pólos em Valongo e Maia), e ainda 2 Serviços de Atendimento a Situações Urgentes (a funcionar em Ermesinde e Maia).
-
-![Mapa da Área Metropolitana do
-Porto](images/Mapa_AMP.jpg){fig-align="center"}
 
 # Carregar a base de dados
 
 ```{r}
-
 inquerito_AVC_2024 <- read_excel("datasets/inquerito_AVC_2024_processed.xlsx") |> 
   clean_names()
 
@@ -181,9 +166,6 @@ grafico_alunos_por_ucc
 ## Contagem de inquéritos respondidos por agrupamento pré e pós-intervenção
 
 ```{r}
-summary_inquerito_by_agrupamento$altura_questionario <- factor(summary_inquerito_by_agrupamento$altura_questionario, 
-                                                              levels = c("Pré-Intervenção", "Pós-intervenção")) 
-
 grafico_alunos_por_agrupamento <- ggplot(data = summary_inquerito_by_agrupamento, aes(x = agrupamento_escolas,
                                                     y = count))+
   geom_bar(stat = "identity", fill = "skyblue") +
@@ -203,7 +185,10 @@ grafico_alunos_por_agrupamento
 inquerito_AVC_2024$altura_questionario <- factor(inquerito_AVC_2024$altura_questionario, 
                                                               levels = c("Pré-Intervenção", "Pós-intervenção")) 
 
-distribuicao_sexo <- ggplot(inquerito_AVC_2024, aes(x = sexo, fill = sexo)) +
+inquerito_AVC_2024 <- inquerito_AVC_2024 %>%
+  filter(!is.na(sexo_alterado))
+
+distribuicao_sexo <- ggplot(inquerito_AVC_2024, aes(x = sexo_alterado, fill = sexo_alterado)) +
   geom_bar() +
   labs(title = "Distribuição por Sexo",
        x = "Sexo",
@@ -217,40 +202,3 @@ distribuicao_sexo
 ```
 
 
-```{r}
-tabela1 <- tbl_summary(
-  inquerito_AVC_2024,
-  include = c(sexo, ucc, agrupamento_escolas, numero_emergencia), # Selecionar variáveis específicas para o resumo
-  by = altura_questionario, # Dividir a tabela pelo estado da doença cardíaca
-  missing = "no" # Excluir dados ausentes do resumo
-) |> 
-  modify_spanning_header(c("stat_1", "stat_2") ~ "**Intervenção**") |> 
-  add_n() |>  # Adicionar uma coluna para contar observações não ausentes
-  add_p() |>  # Realizar testes estatísticos para comparar grupos
-  modify_header(label = "**Variable**") # Personalizar o cabeçalho da tabela
-
-tabela1
-```
-
-```{r}
-tabela_teste_proporcao <- tbl_summary(
-  inquerito_AVC_2024 %>% mutate(numero_emergencia = ifelse(numero_emergencia == "112", "112", "Outros")),
-  include = c(numero_emergencia),  # Seleciona apenas a variável de interesse para análise
-  by = altura_questionario,  # Divide a tabela pelo estado da intervenção (pré e pós)
-  missing = "no"  # Exclui dados ausentes do resumo
-) |> 
-  add_n() |>  # Adiciona uma coluna para contar observações não ausentes
-  add_p(test = all_categorical() ~ "fisher.test") |>  # Usa o teste exato de Fisher para comparar proporções
-  modify_header(label = "**Variable**") |>  # Personaliza o cabeçalho da tabela
-  modify_spanning_header(c("stat_1", "stat_2") ~ "**Intervenção**")  # Define o cabeçalho dos grupos
-
-# Visualizar a tabela criada
-tabela_teste_proporcao
-
-```
-
-```{r}
-
-prop.test(x = c(1306, 771), n = c(1353,784))
-
-```
