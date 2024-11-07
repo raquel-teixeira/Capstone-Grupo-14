@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -54,8 +88,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#a-quem-se-destina-este-projeto" id="toc-a-quem-se-destina-este-projeto" class="nav-link" data-scroll-target="#a-quem-se-destina-este-projeto"><span class="header-section-number">1.4</span> A quem se destina este projeto?</a></li>
   <li><a href="#quais-os-conteúdos-a-ser-abordados" id="toc-quais-os-conteúdos-a-ser-abordados" class="nav-link" data-scroll-target="#quais-os-conteúdos-a-ser-abordados"><span class="header-section-number">1.5</span> Quais os conteúdos a ser abordados?</a></li>
   <li><a href="#como-decorre-a-implementação" id="toc-como-decorre-a-implementação" class="nav-link" data-scroll-target="#como-decorre-a-implementação"><span class="header-section-number">1.6</span> Como decorre a implementação?</a></li>
-  <li><a href="#atividades-focadas-na-comunidade.-de-que-forma" id="toc-atividades-focadas-na-comunidade.-de-que-forma" class="nav-link" data-scroll-target="#atividades-focadas-na-comunidade.-de-que-forma"><span class="header-section-number">1.7</span> Atividades focadas na comunidade. De que forma?</a></li>
-  <li><a href="#exemplo-de-atividade" id="toc-exemplo-de-atividade" class="nav-link" data-scroll-target="#exemplo-de-atividade"><span class="header-section-number">1.8</span> Exemplo de atividade</a></li>
+  <li><a href="#atividades-focadas-na-comunidade" id="toc-atividades-focadas-na-comunidade" class="nav-link" data-scroll-target="#atividades-focadas-na-comunidade"><span class="header-section-number">1.7</span> Atividades focadas na comunidade</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -83,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">6 de novembro de 2024</p>
+      <p class="date">7 de novembro de 2024</p>
     </div>
   </div>
   
@@ -95,6 +128,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>projeto <span class="ot">=</span> <span class="st">"Dias Comemorativos: Prevenção do AVC"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Bem vindo aos “Dias Comemorativos: Prevenção do AVC”!</strong></p>
 <section id="introdução" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introdução</h1>
 <p>O projeto <strong>Dias Comemorativos: Prevenção do AVC</strong> tem como objetivo aumentar a literacia em saúde da comunidade escolar relativamente ao <strong>Acidente Vascular Cerebral (AVC)</strong>. Para isso, disponibiliza um conjunto de recursos de apoio a profissionais de educação, saúde e outros, de modo a abordarem o tema AVC de forma coerente, sustentada e estruturada ao longo do ano letivo.</p>
@@ -110,6 +147,26 @@ ul.task-list li input[type="checkbox"] {
 <section id="entidades-promotoras" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="entidades-promotoras"><span class="header-section-number">1.3</span> Entidades Promotoras</h2>
 <p>Unidade Local de Saúde (ULS) São João<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, Câmara Municipal da Maia (CMM), Câmara Municipal de Valongo (CMV).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ULS São João
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O Decreto-Lei nº 23/2019, de 30 de janeiro [1], concretizou a transferência de competências para os órgãos municipais e para entidades intermunicipais de saúde, visando a criação de uma estratégia entre os municípios e o Serviço Nacional de Saúde (SNS) incluindo: manutenção, conservação e equipamento das instalações das unidades de prestação de cuidados de saúde primários; gestão e execução dos serviços de apoio logísticos dos ACES; e gestão dos trabalhadores da carreira operacional das unidades funcionais dos ACES. Por outro lado, o Decreto-Lei nº 102/2023, de 7 de novembro [2], determinou a criação de Unidades Locais de Saúde (ULS), com natureza de entidades públicas empresariais. Com este modelo organizativo, procedeu-se à incorporação de hospitais e centros hospitalares com os Agrupamentos de Centros de Saúde (ACES), criando uma prestação de cuidados primários e hospitalares integrados.</p>
+<p>Assim, desde o dia 1 de janeiro de 2024, o Centro Hospitalar Universitário de São João, E.P.E., passou a integrar os ACES Grande Porto III – Maia/Valongo e Grande Porto VI – Porto Oriental, denominando-se, atualmente, Unidade Local de São João, E.P.E. A sua área de influência geográfica da ULS São João engloba a totalidade dos concelhos da Maia e Valongo, juntamente com as freguesias de Bonfim, Campanhã e Paranhos do concelho do Porto, resultando numa área geográfica total de 121,08 km2 [3].</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/MAPA_ulssj.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 1: Mapa da área geográfica da ULS São João. <em>Fonte: Instituto Nacional de Estatística, I.P. – Portugal</em></figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="a-quem-se-destina-este-projeto" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="a-quem-se-destina-este-projeto"><span class="header-section-number">1.4</span> A quem se destina este projeto?</h2>
@@ -138,48 +195,40 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>De salientar que cada atividade pode ser implementada de forma independente das restantes e que não existe um número obrigatório de atividades. Pretende-se fornecer conteúdo coerente e cientificamente validado, sem impor restrições, apoiando assim os profissionais envolvidos.</p>
 </section>
-<section id="atividades-focadas-na-comunidade.-de-que-forma" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="atividades-focadas-na-comunidade.-de-que-forma"><span class="header-section-number">1.7</span> Atividades focadas na comunidade. De que forma?</h2>
+<section id="atividades-focadas-na-comunidade" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="atividades-focadas-na-comunidade"><span class="header-section-number">1.7</span> Atividades focadas na comunidade</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">De que forma?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Exemplo de atividades</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>As atividades podem ser dinamizadas por profissionais de diversas áreas (educação, saúde, câmaras municipais), com o apoio logístico e científico das entidades promotoras.</p>
 <p>Além da discussão em grupo na sala de aula, pretende-se promover a discussão dos alunos com as suas famílias. Os materiais lúdicos utilizados na escola contêm atividades para realizar com a família e um código QR, que permite aceder a um website com atividades lúdicas e outras informações.</p>
 <p>Em simultâneo, decorrem outras iniciativas comunitárias de divulgação de conteúdo informativo sobre o AVC, em alinhamento com este projeto.</p>
-</section>
-<section id="exemplo-de-atividade" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="exemplo-de-atividade"><span class="header-section-number">1.8</span> Exemplo de atividade</h2>
-<div id="fig-maps" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-maps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-maps" style="flex-basis: 50.0%;justify-content: flex-start;">
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div id="fig-card" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
+<figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/loto_AVC.png" class="img-fluid figure-img" data-ref-parent="fig-maps" width="360">
+<img src="images/loto_AVC.png" class="img-fluid figure-img" width="360">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Cartão para as crianças
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Cartão para as crianças
 </figcaption>
 </figure>
 </div>
-</div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-maps" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div id="fig-perg" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
+<figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-perg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/lotoperg_AVC.png" class="img-fluid figure-img" data-ref-parent="fig-maps" width="500">
+<img src="images/lotoperg_AVC.png" class="img-fluid figure-img" width="500">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-perg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(b) Perguntas para responder
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-perg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Perguntas para responder
 </figcaption>
 </figure>
 </div>
+<p>Celebração do Dia Mundial do AVC: Cartões de jogo distribuídos na dinamização de uma das atividades do projeto.</p>
 </div>
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-maps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;1: Celebração do Dia Mundial do AVC: Cartões de jogo distribuídos na dinamização de uma das atividades do projeto.
-</figcaption>
-</figure>
 </div>
 </section>
 </section>

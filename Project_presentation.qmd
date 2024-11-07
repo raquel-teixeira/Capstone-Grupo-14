@@ -23,27 +23,14 @@ execute:
 project:
   output-dir: outputs/documents
 ---
+```{r}
+projeto = "Dias Comemorativos: Prevenção do AVC"
+```
+**Bem vindo aos "`r projeto`"!**
 
 # Introdução
 
 O projeto **Dias Comemorativos: Prevenção do AVC** tem como objetivo aumentar a literacia em saúde da comunidade escolar relativamente ao **Acidente Vascular Cerebral (AVC)**. Para isso, disponibiliza um conjunto de recursos de apoio a profissionais de educação, saúde e outros, de modo a abordarem o tema AVC de forma coerente, sustentada e estruturada ao longo do ano letivo.
-
-## Onde foi realizado o projeto
-
-### No Extinto ACES Maia/Valongo
-
-O Extinto Agrupamento de Centros de Saúde do Grande Porto III – Maia/Valongo resultou da fusão dos anteriores ACeS da Maia e Valongo, conforme a Portaria nº 310/2012, de 10 de outubro.
-
-Abrangia os concelhos da Maia e Valongo, com uma população de 229.164
-residentes, distribuídos por 14 freguesias. Corresponde a uma área geográfica de 158,27 km2, com uma densidade populacional de 1447,93 hab./Km2.
-O total de inscritos era de 217.516, dos quais 201.698 (92,7%) integrados em USF.
-
-O ACeS Maia/Valongo integrava todas as unidades funcionais previstas no Decreto-Lei nº28/2008, de 22 de fevereiro.
-
-Era composto por 30 unidades, distribuídas por 16 Unidades de Saúde Familiar, 3 Unidades de Cuidados de Saúde Personalizados, 5 Unidade de Cuidados na Comunidade, 1 Unidade de Recursos Assistenciais Partilhados, 1 Unidade de Saúde Pública, 1 Centro Diagnóstico Pneumológico (pólos em Valongo e Maia), e ainda 2 Serviços de Atendimento a Situações Urgentes (a funcionar em Ermesinde e Maia).
-
-![Mapa da Área Metropolitana do
-Porto](images/Mapa_AMP.jpg){fig-align="center"}
 
 ## Porquê o AVC?
 
@@ -60,6 +47,18 @@ Pretende-se que a articulação entre AEs, autarquias e cuidados de saúde,fomen
 Unidade Local de Saúde (ULS) São João[^1], Câmara Municipal da Maia (CMM), Câmara Municipal de Valongo (CMV).
 
 [^1]: Unidade de Saúde Pública, Unidade de Cuidados na Comunidade (UCC) destes conselhos e Serviço de Neurologia.
+
+
+::: callout-note
+## ULS São João
+
+O Decreto-Lei nº 23/2019, de 30 de janeiro \[1\], concretizou a transferência de competências para os órgãos municipais e para entidades intermunicipais de saúde, visando a criação de uma estratégia entre os municípios e o Serviço Nacional de Saúde (SNS) incluindo: manutenção, conservação e equipamento das instalações das unidades de prestação de cuidados de saúde primários; gestão e execução dos serviços de apoio logísticos dos ACES; e gestão dos trabalhadores da carreira operacional das unidades funcionais dos ACES. Por outro lado, o Decreto-Lei nº 102/2023, de 7 de novembro \[2\], determinou a criação de Unidades Locais de Saúde (ULS), com natureza de entidades públicas empresariais. Com este modelo organizativo, procedeu-se à incorporação de hospitais e centros hospitalares com os Agrupamentos de Centros de Saúde (ACES), criando uma prestação de cuidados primários e hospitalares integrados.
+
+Assim, desde o dia 1 de janeiro de 2024, o Centro Hospitalar Universitário de São João, E.P.E., passou a integrar os ACES Grande Porto III – Maia/Valongo e Grande Porto VI – Porto Oriental, denominando-se, atualmente, Unidade Local de São João, E.P.E. A sua área de influência geográfica da ULS São João engloba a totalidade dos concelhos da Maia e Valongo, juntamente com as freguesias de Bonfim, Campanhã e Paranhos do concelho do Porto, resultando numa área geográfica total de 121,08 km2 \[3\].
+
+![Figura 1: Mapa da área geográfica da ULS São João. *Fonte: Instituto Nacional de Estatística, I.P. – Portugal*](images/MAPA_ulssj.png)
+:::
+
 
 ## A quem se destina este projeto?
 
@@ -95,7 +94,10 @@ Ao longo do ano são partilhadas atividades curtas, abordando os temas referidos
 
 De salientar que cada atividade pode ser implementada de forma independente das restantes e que não existe um número obrigatório de atividades. Pretende-se fornecer conteúdo coerente e cientificamente validado, sem impor restrições, apoiando assim os profissionais envolvidos.
 
-## Atividades focadas na comunidade. De que forma?
+## Atividades focadas na comunidade
+
+::: panel-tabset
+## De que forma?
 
 As atividades podem ser dinamizadas por profissionais de diversas áreas (educação, saúde, câmaras municipais), com o apoio logístico e científico das entidades promotoras.
 
@@ -103,9 +105,8 @@ Além da discussão em grupo na sala de aula, pretende-se promover a discussão 
 
 Em simultâneo, decorrem outras iniciativas comunitárias de divulgação de conteúdo informativo sobre o AVC, em alinhamento com este projeto.
 
-## Exemplo de atividade
+## Exemplo de atividades
 
-::: {#fig-maps layout-ncol="2"}
 ![Cartão para as crianças](images/loto_AVC.png){#fig-card width="360"}
 
 ![Perguntas para responder](images/lotoperg_AVC.png){#fig-perg width="500"}
