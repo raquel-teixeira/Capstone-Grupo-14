@@ -64,28 +64,15 @@ remove(pkg)
 
 # O Extinto ACES Maia/Valongo
 
-O Extinto Agrupamento de Centros de Saúde do Grande Porto III –
-Maia/Valongo resultou da fusão dos anteriores ACeS da Maia e Valongo,
-conforme Portaria nº 310/2012, de 10 de outubro.
+O Extinto Agrupamento de Centros de Saúde do Grande Porto III – Maia/Valongo resultou da fusão dos anteriores ACeS da Maia e Valongo, conforme a Portaria nº 310/2012, de 10 de outubro.
 
-Abrange os concelhos da Maia e Valongo e tem uma população de 229.164\*
-residentes, distribuídos por 14 freguesias.
+Abrangia os concelhos da Maia e Valongo, com uma população de 229.164
+residentes, distribuídos por 14 freguesias. Corresponde a uma área geográfica de 158,27 km2, com uma densidade populacional de 1447,93 hab./Km2.
+O total de inscritos era de 217.516, dos quais 201.698 (92,7%) integrados em USF.
 
-Corresponde a uma área geográfica de 158,27 km2, com uma densidade
-populacional de 1447,93 hab./Km2.
+O ACeS Maia/Valongo integrava todas as unidades funcionais previstas no Decreto-Lei nº28/2008, de 22 de fevereiro.
 
-O total de inscritos é de 217.516, dos quais 201.698 (92,7%) estão
-integrados em USF.
-
-O ACeS Maia/Valongo integra todas as unidades funcionais previstas no
-Decreto-Lei nº28/2008, de 22 de fevereiro.
-
-É composto por 30 unidades, distribuídas por 16 Unidades de Saúde
-Familiar, 3 Unidades de Cuidados de Saúde Personalizados, 5 Unidade de
-Cuidados na Comunidade, 1 Unidade de Recursos Assistenciais Partilhados,
-1 Unidade de Saúde Pública, 1 Centro Diagnóstico Pneumológico (pólos em
-Valongo e Maia), e ainda 2 Serviços de Atendimento a Situações Urgentes
-(a funcionar em Ermesinde e Maia).
+Era composto por 30 unidades, distribuídas por 16 Unidades de Saúde Familiar, 3 Unidades de Cuidados de Saúde Personalizados, 5 Unidade de Cuidados na Comunidade, 1 Unidade de Recursos Assistenciais Partilhados, 1 Unidade de Saúde Pública, 1 Centro Diagnóstico Pneumológico (pólos em Valongo e Maia), e ainda 2 Serviços de Atendimento a Situações Urgentes (a funcionar em Ermesinde e Maia).
 
 ![Mapa da Área Metropolitana do
 Porto](images/Mapa_AMP.jpg){fig-align="center"}
