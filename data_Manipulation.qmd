@@ -83,7 +83,12 @@ inquerito_AVC_2024$altura_questionario <- factor(inquerito_AVC_2024$altura_quest
 ```{r}
 nrow(inquerito_AVC_2024)
 
+n_row <- nrow(inquerito_AVC_2024)
+
 ```
+
+No total, foram realizados `r n_row` inquéritos.
+
 
 # Explorar a base de dados
 
