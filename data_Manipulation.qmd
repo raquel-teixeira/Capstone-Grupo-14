@@ -217,3 +217,9 @@ tabela_teste_proporcao <- tbl_summary(
 tabela_teste_proporcao
 
 ```
+
+```{r}
+
+prop.test(x = c(1306, 771), n = c(1353,784))
+
+```
