@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projeto CAPSTONE GRUPO 14</title>
+<title>projeto_capstone14</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="projeto_capstone14_files/libs/clipboard/clipboard.min.js"></script>
@@ -43,41 +96,207 @@ ul.task-list li input[type="checkbox"] {
 
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projeto CAPSTONE GRUPO 14</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>title: "Projeto CAPSTONE GRUPO 14"</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>author: "Hugo Silva e Raquel Teixeira"</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>affiliation: </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Escola Nacional de Saúde Pública</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>date: today</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>date-format: long</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>lang: pt </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>format:</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    preview: false</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    smooth-scroll: true</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    embed-resources: true</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    toc: true</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    toc-location: left</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    number-sections: true</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    number-depth: 3</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    code_download: true</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    code-copy: true</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    output-file: projeto_final.html</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    output-dir: output/documents</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>execute:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  warning: false</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  collapse: true</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  message: false</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  eval: true</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  echo: true</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>title-block-style: default</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>theme: templata_ensp</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>editor: </span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  markdown: </span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    wrap: 72</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>project:</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  output-dir: output/documents</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code}</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="in">projeto = "Dias Comemorativos: Prevenção do AVC"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>:::</p>
+<p><strong>Bem vindo aos “Dias Comemorativos: Prevenção do AVC”!</strong></p>
 <section id="introdução" class="level1">
 <h1>Introdução</h1>
-<p><code>{r child="project_presentation.qmd"}</code></p>
+<p>O projeto <strong>Dias Comemorativos: Prevenção do AVC</strong> tem como objetivo aumentar a literacia em saúde da comunidade escolar relativamente ao <strong>Acidente Vascular Cerebral (AVC)</strong>. Para isso, disponibiliza um conjunto de recursos de apoio a profissionais de educação, saúde e outros, de modo a abordarem o tema AVC de forma coerente, sustentada e estruturada ao longo do ano letivo.</p>
+<section id="porquê-o-avc" class="level2">
+<h2 class="anchored" data-anchor-id="porquê-o-avc">Porquê o AVC?</h2>
+<p>O AVC é a primeira causa de morte em Portugal e foi identificado no Plano Local de Saúde Maia/Valongo como uma das áreas de intervenção prioritária nos municípios da Maia e de Valongo, para os anos de 2023 a 2025.</p>
 </section>
-<section id="manipulação-dos-dados" class="level1">
-<h1>Manipulação dos dados</h1>
-<p><code>{r child="data_manipulation.qmd"}</code></p>
+<section id="porquê-intervir-nos-dias-comemorativos" class="level2">
+<h2 class="anchored" data-anchor-id="porquê-intervir-nos-dias-comemorativos">Porquê intervir nos dias comemorativos?</h2>
+<p>Os Agrupamentos de Escolas (AEs), as autarquias e os cuidados de saúde, têm um papel fundamental no desenvolvimento de estratégias e atividades de promoção da saúde e bem-estar da comunidade, sendo a celebração de dias comemorativos uma atividade frequente. Os estudos revelam que, para aumentar o seu impacto em saúde, estas intervenções devem ser: continuadas ao longo do tempo, focadas na comunidade e ter objetivos bem definidos.</p>
+<p>Pretende-se que a articulação entre AEs, autarquias e cuidados de saúde,fomente a saúde e bem-estar da comunidade, através de estratégias e objetivos comuns. Com isto em mente, nasceu o projeto DIAS COMEMORATIVOS: PREVENÇÃO DO AVC.</p>
 </section>
-<section id="visualização-dos-dados" class="level1">
-<h1>Visualização dos dados</h1>
-<p><code>{r child="data_vision.qmd"}</code></p>
-<p>#Modelo Estatistico</p>
-<p><code>{r child="model_estatistic.qmd"}</code></p>
+<section id="entidades-promotoras" class="level2">
+<h2 class="anchored" data-anchor-id="entidades-promotoras">Entidades Promotoras</h2>
+<p>Unidade Local de Saúde (ULS) São João<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, Câmara Municipal da Maia (CMM), Câmara Municipal de Valongo (CMV).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ULS São João
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O Decreto-Lei nº 23/2019, de 30 de janeiro (<span class="citation" data-cites="dl23_2019">@dl23_2019</span>), concretizou a transferência de competências para os órgãos municipais e para entidades intermunicipais de saúde, visando a criação de uma estratégia entre os municípios e o Serviço Nacional de Saúde (SNS) incluindo: manutenção, conservação e equipamento das instalações das unidades de prestação de cuidados de saúde primários; gestão e execução dos serviços de apoio logísticos dos ACES; e gestão dos trabalhadores da carreira operacional das unidades funcionais dos ACES. Por outro lado, o Decreto-Lei nº 102/2023, de 7 de novembro (<span class="citation" data-cites="dl102_2023">@dl102_2023</span>), determinou a criação de Unidades Locais de Saúde (ULS), com natureza de entidades públicas empresariais. Com este modelo organizativo, procedeu-se à incorporação de hospitais e centros hospitalares com os Agrupamentos de Centros de Saúde (ACES), criando uma prestação de cuidados primários e hospitalares integrados.</p>
+<p>Assim, desde o dia 1 de janeiro de 2024, o Centro Hospitalar Universitário de São João, E.P.E., passou a integrar os ACES Grande Porto III – Maia/Valongo e Grande Porto VI – Porto Oriental, denominando-se, atualmente, Unidade Local de São João, E.P.E. A sua área de influência geográfica da ULS São João engloba a totalidade dos concelhos da Maia e Valongo, juntamente com as freguesias de Bonfim, Campanhã e Paranhos do concelho do Porto, resultando numa área geográfica total de 121,08 km2 (<span class="citation" data-cites="uls_saojoao">@uls_saojoao</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/MAPA_ulssj.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 1: Mapa da área geográfica da ULS São João. <em>Fonte: Instituto Nacional de Estatística, I.P. – Portugal</em></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="a-quem-se-destina-este-projeto" class="level2">
+<h2 class="anchored" data-anchor-id="a-quem-se-destina-este-projeto">A quem se destina este projeto?</h2>
+<p>A alunos do 1º ao 9º ano, pretendendo-se que estes partilhem os conteúdos abordados com as suas famílias</p>
+</section>
+<section id="quais-os-conteúdos-a-ser-abordados" class="level2">
+<h2 class="anchored" data-anchor-id="quais-os-conteúdos-a-ser-abordados">Quais os conteúdos a ser abordados?</h2>
+<p>As diferentes atividades abordam os seguintes temas:</p>
+<ul>
+<li><p>O que é o AVC;</p></li>
+<li><p>O que contribui para aumentar o risco de ter um AVC;</p></li>
+<li><p>Quais os sinais de alarme de AVC;</p></li>
+<li><p>O que se deve fazer quando se identificam sinais de alarme.</p></li>
+</ul>
+</section>
+<section id="como-decorre-a-implementação" class="level2">
+<h2 class="anchored" data-anchor-id="como-decorre-a-implementação">Como decorre a implementação?</h2>
+<p>Ao longo do ano são partilhadas atividades curtas, abordando os temas referidos no ponto anterior e aproveitando as diferentes datas comemorativas:</p>
+<ul>
+<li><p>Dia Mundial do AVC (29 de outubro)</p></li>
+<li><p>Dia do Não Fumador (17 de dezembro)</p></li>
+<li><p>Dia Internacional dos Direitos Humanos (10 de dezembro)</p></li>
+<li><p>Dia dos Afetos (14 de fevereiro)</p></li>
+<li><p>Dia Mundial da Obesidade (4 de março)</p></li>
+<li><p>Dia Nacional do Doente com AVC (31 de março)</p></li>
+</ul>
+<p>De salientar que cada atividade pode ser implementada de forma independente das restantes e que não existe um número obrigatório de atividades. Pretende-se fornecer conteúdo coerente e cientificamente validado, sem impor restrições, apoiando assim os profissionais envolvidos.</p>
+</section>
+<section id="atividades-focadas-na-comunidade" class="level2">
+<h2 class="anchored" data-anchor-id="atividades-focadas-na-comunidade">Atividades focadas na comunidade</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">De que forma?</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Exemplo de atividades</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>As atividades podem ser dinamizadas por profissionais de diversas áreas (educação, saúde, câmaras municipais), com o apoio logístico e científico das entidades promotoras.</p>
+<p>Além da discussão em grupo na sala de aula, pretende-se promover a discussão dos alunos com as suas famílias. Os materiais lúdicos utilizados na escola contêm atividades para realizar com a família e um código QR, que permite aceder a um website com atividades lúdicas e outras informações.</p>
+<p>Em simultâneo, decorrem outras iniciativas comunitárias de divulgação de conteúdo informativo sobre o AVC, em alinhamento com este projeto.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="fig-card" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/loto_AVC.png" class="img-fluid figure-img" width="360">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Cartão para as crianças
+</figcaption>
+</figure>
+</div>
+<div id="fig-perg" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-perg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/lotoperg_AVC.png" class="img-fluid figure-img" width="500">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-perg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Perguntas para responder
+</figcaption>
+</figure>
+</div>
+<p>Celebração do Dia Mundial do AVC: Cartões de jogo distribuídos na dinamização de uma das atividades do projeto.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Para mais informação
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consulte <a href="https://portal-chsj.min-saude.pt/pages/1461/">aqui</a> informações adicionais e os restantes jogos do projeto.</p>
+</div>
+</div>
+</section>
+<section id="referências" class="level2">
+<h2 class="anchored" data-anchor-id="referências">Referências</h2>
+<div id="refs" role="list">
+
+</div>
+</section>
 </section>
 
-</main>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Unidade de Saúde Pública, Unidade de Cuidados na Comunidade (UCC) destes conselhos e Serviço de Neurologia.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

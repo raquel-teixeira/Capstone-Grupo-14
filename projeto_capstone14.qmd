@@ -17,7 +17,7 @@ format:
     number-depth: 3
     code_download: true
     code-copy: true
-    output-file: project_capstonefinal.html
+    output-file: projeto_final.html
     output-dir: output/documents
 execute:
   warning: false
@@ -34,7 +34,8 @@ project:
   output-dir: output/documents
 ---
 
-# Introdução
+```markdown
 
 ```{r child="project_presentation.qmd"}
+
 
