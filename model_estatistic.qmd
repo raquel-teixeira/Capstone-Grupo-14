@@ -1,0 +1,107 @@
+---
+title: "Modelos Estatisticos"
+author: "Hugo Silva e Raquel Teixeira"
+affiliation: 
+    - Escola Nacional de Saúde Pública
+date: today
+date-format: long
+lang: pt 
+format:
+  html:
+    preview: false
+    smooth-scroll: true
+    embed-resources: true
+    toc: true
+    toc-location: left
+    number-sections: true
+    number-depth: 3
+    code_download: true
+    code-copy: true
+    output-file: data_Manipulation.html
+    output-dir: output/documents
+execute:
+  warning: false
+  collapse: true
+  message: false
+  eval: true
+  echo: true
+title-block-style: default
+theme: templata_ensp
+editor: 
+  markdown: 
+    wrap: 72
+project:
+  output-dir: output/documents
+---
+
+# Carregar os pacotes necessários
+
+```{r}
+rm(list = ls(all.names = TRUE)) # limpa todos os objetos, incluindo os ocultos
+
+required_packages <- c("janitor",
+                       "tidyverse",
+                       "rio",
+                       "here",
+                       "haven",
+                       "data.table",
+                       "lubridate",
+                       "readxl",
+                       "broom",
+                       "gt",
+                       "gtsummary"
+                       )      
+
+for (pkg in required_packages) {
+  # install packages if not already present
+  if (!pkg %in% rownames(installed.packages())) {
+    install.packages(pkg)
+  }
+  
+  # load packages to this current session 
+  library(pkg, character.only = TRUE)
+}
+remove(required_packages)
+remove(pkg)
+```
+
+# Tabela sumária dos dados
+```{r}
+tabela1 <- tbl_summary(
+  inquerito_AVC_2024,
+  include = c(sexo, ucc, agrupamento_escolas, numero_emergencia), # Selecionar variáveis específicas para o resumo
+  by = altura_questionario, # Dividir a tabela pelo estado da doença cardíaca
+  missing = "no" # Excluir dados ausentes do resumo
+) |> 
+  modify_spanning_header(c("stat_1", "stat_2") ~ "**Intervenção**") |> 
+  add_n() |>  # Adicionar uma coluna para contar observações não ausentes
+  add_p() |>  # Realizar testes estatísticos para comparar grupos
+  modify_header(label = "**Variable**") # Personalizar o cabeçalho da tabela
+
+tabela1
+```
+
+# Teste de proporção
+
+```{r}
+tabela_teste_proporcao <- tbl_summary(
+  inquerito_AVC_2024 %>% mutate(numero_emergencia = ifelse(numero_emergencia == "112", "112", "Outros")),
+  include = c(numero_emergencia),  # Seleciona apenas a variável de interesse para análise
+  by = altura_questionario,  # Divide a tabela pelo estado da intervenção (pré e pós)
+  missing = "no"  # Exclui dados ausentes do resumo
+) |> 
+  add_n() |>  # Adiciona uma coluna para contar observações não ausentes
+  add_p(test = all_categorical() ~ "fisher.test") |>  # Usa o teste exato de Fisher para comparar proporções
+  modify_header(label = "**Variable**") |>  # Personaliza o cabeçalho da tabela
+  modify_spanning_header(c("stat_1", "stat_2") ~ "**Intervenção**")  # Define o cabeçalho dos grupos
+
+# Visualizar a tabela criada
+tabela_teste_proporcao
+
+```
+
+```{r}
+
+prop.test(x = c(1306, 771), n = c(1353,784))
+
+```
