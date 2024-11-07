@@ -189,7 +189,7 @@ distribuicao_sexo
 ```{r}
 tabela1 <- tbl_summary(
   inquerito_AVC_2024,
-  include = c(ucc, sexo, agrupamento_escolas, numero_emergencia), # Selecionar variáveis específicas para o resumo
+  include = c( sexo, sexo, agrupamento_escolas, numero_emergencia), # Selecionar variáveis específicas para o resumo
   by = altura_questionario, # Dividir a tabela pelo estado da doença cardíaca
   missing = "no" # Excluir dados ausentes do resumo
 ) |> 
