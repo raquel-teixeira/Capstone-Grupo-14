@@ -65,7 +65,6 @@ remove(required_packages)
 remove(pkg)
 ```
 
-
 # Carregar a base de dados
 
 ```{r}
