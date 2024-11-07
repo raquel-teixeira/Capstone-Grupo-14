@@ -22,6 +22,7 @@ execute:
   echo: true
 project:
   output-dir: outputs/documents
+bibliography: biblio/references.bib 
 ---
 ```{r}
 projeto = "Dias Comemorativos: Prevenção do AVC"
@@ -52,9 +53,9 @@ Unidade Local de Saúde (ULS) São João[^1], Câmara Municipal da Maia (CMM), C
 ::: callout-note
 ## ULS São João
 
-O Decreto-Lei nº 23/2019, de 30 de janeiro \[1\], concretizou a transferência de competências para os órgãos municipais e para entidades intermunicipais de saúde, visando a criação de uma estratégia entre os municípios e o Serviço Nacional de Saúde (SNS) incluindo: manutenção, conservação e equipamento das instalações das unidades de prestação de cuidados de saúde primários; gestão e execução dos serviços de apoio logísticos dos ACES; e gestão dos trabalhadores da carreira operacional das unidades funcionais dos ACES. Por outro lado, o Decreto-Lei nº 102/2023, de 7 de novembro \[2\], determinou a criação de Unidades Locais de Saúde (ULS), com natureza de entidades públicas empresariais. Com este modelo organizativo, procedeu-se à incorporação de hospitais e centros hospitalares com os Agrupamentos de Centros de Saúde (ACES), criando uma prestação de cuidados primários e hospitalares integrados.
+O Decreto-Lei nº 23/2019, de 30 de janeiro (@dl23_2019), concretizou a transferência de competências para os órgãos municipais e para entidades intermunicipais de saúde, visando a criação de uma estratégia entre os municípios e o Serviço Nacional de Saúde (SNS) incluindo: manutenção, conservação e equipamento das instalações das unidades de prestação de cuidados de saúde primários; gestão e execução dos serviços de apoio logísticos dos ACES; e gestão dos trabalhadores da carreira operacional das unidades funcionais dos ACES. Por outro lado, o Decreto-Lei nº 102/2023, de 7 de novembro (@dl102_2023), determinou a criação de Unidades Locais de Saúde (ULS), com natureza de entidades públicas empresariais. Com este modelo organizativo, procedeu-se à incorporação de hospitais e centros hospitalares com os Agrupamentos de Centros de Saúde (ACES), criando uma prestação de cuidados primários e hospitalares integrados.
 
-Assim, desde o dia 1 de janeiro de 2024, o Centro Hospitalar Universitário de São João, E.P.E., passou a integrar os ACES Grande Porto III – Maia/Valongo e Grande Porto VI – Porto Oriental, denominando-se, atualmente, Unidade Local de São João, E.P.E. A sua área de influência geográfica da ULS São João engloba a totalidade dos concelhos da Maia e Valongo, juntamente com as freguesias de Bonfim, Campanhã e Paranhos do concelho do Porto, resultando numa área geográfica total de 121,08 km2 \[3\].
+Assim, desde o dia 1 de janeiro de 2024, o Centro Hospitalar Universitário de São João, E.P.E., passou a integrar os ACES Grande Porto III – Maia/Valongo e Grande Porto VI – Porto Oriental, denominando-se, atualmente, Unidade Local de São João, E.P.E. A sua área de influência geográfica da ULS São João engloba a totalidade dos concelhos da Maia e Valongo, juntamente com as freguesias de Bonfim, Campanhã e Paranhos do concelho do Porto, resultando numa área geográfica total de 121,08 km2 (@uls_saojoao).
 
 ![Figura 1: Mapa da área geográfica da ULS São João. *Fonte: Instituto Nacional de Estatística, I.P. – Portugal*](images/MAPA_ulssj.png)
 :::
@@ -113,3 +114,9 @@ Em simultâneo, decorrem outras iniciativas comunitárias de divulgação de con
 
 Celebração do Dia Mundial do AVC: Cartões de jogo distribuídos na dinamização de uma das atividades do projeto.
 :::
+
+## Referências
+
+::: {#refs}
+:::
+
