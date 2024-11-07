@@ -22,11 +22,13 @@ execute:
   echo: true
 project:
   output-dir: outputs/documents
-bibliography: biblio/references.bib 
+bibliography: templates/references.bib 
 ---
+
 ```{r}
 projeto = "Dias Comemorativos: Prevenção do AVC"
 ```
+
 **Bem vindo aos "`r projeto`"!**
 
 # Introdução
@@ -49,7 +51,6 @@ Unidade Local de Saúde (ULS) São João[^1], Câmara Municipal da Maia (CMM), C
 
 [^1]: Unidade de Saúde Pública, Unidade de Cuidados na Comunidade (UCC) destes conselhos e Serviço de Neurologia.
 
-
 ::: callout-note
 ## ULS São João
 
@@ -59,7 +60,6 @@ Assim, desde o dia 1 de janeiro de 2024, o Centro Hospitalar Universitário de S
 
 ![Figura 1: Mapa da área geográfica da ULS São João. *Fonte: Instituto Nacional de Estatística, I.P. – Portugal*](images/MAPA_ulssj.png)
 :::
-
 
 ## A quem se destina este projeto?
 
@@ -115,8 +115,13 @@ Em simultâneo, decorrem outras iniciativas comunitárias de divulgação de con
 Celebração do Dia Mundial do AVC: Cartões de jogo distribuídos na dinamização de uma das atividades do projeto.
 :::
 
+::: callout-tip
+## Para mais informação
+
+Consulte [aqui](https://portal-chsj.min-saude.pt/pages/1461/) informações adicionais e os restantes jogos do projeto.
+:::
+
 ## Referências
 
 ::: {#refs}
 :::
-
