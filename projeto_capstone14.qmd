@@ -1,0 +1,40 @@
+---
+title: "Projeto CAPSTONE GRUPO 14"
+author: "Hugo Silva e Raquel Teixeira"
+affiliation: 
+    - Escola Nacional de Saúde Pública
+date: today
+date-format: long
+lang: pt 
+format:
+  html:
+    preview: false
+    smooth-scroll: true
+    embed-resources: true
+    toc: true
+    toc-location: left
+    number-sections: true
+    number-depth: 3
+    code_download: true
+    code-copy: true
+    output-file: project_capstonefinal.html
+    output-dir: output/documents
+execute:
+  warning: false
+  collapse: true
+  message: false
+  eval: true
+  echo: true
+title-block-style: default
+theme: templata_ensp
+editor: 
+  markdown: 
+    wrap: 72
+project:
+  output-dir: output/documents
+---
+
+# Introdução
+
+```{r child="project_presentation.qmd"}
+
