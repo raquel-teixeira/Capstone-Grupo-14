@@ -8,9 +8,6 @@ date-format: long
 lang: pt 
 format:
   html:
-    preview: false
-    smooth-scroll: true
-    embed-resources: true
     toc: true
     toc-location: left
     number-sections: true
@@ -21,9 +18,7 @@ format:
     output-dir: output/documents
 execute:
   warning: false
-  collapse: true
   message: false
-  eval: true
   echo: true
 title-block-style: default
 theme: templata_ensp
@@ -32,10 +27,17 @@ editor:
     wrap: 72
 project:
   output-dir: output/documents
+bibliography: templates/references.bib
 ---
 
-```markdown
-
 ```{r child="project_presentation.qmd"}
+```
 
+```{r child="data_manipulation.qmd"}
+```
 
+```{r child="data_vision.qmd"}
+```
+
+```{r child="model_estatistic.qmd"}
+```

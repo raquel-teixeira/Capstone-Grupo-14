@@ -34,38 +34,9 @@ project:
   output-dir: output/documents
 ---
 
-# Carregar os pacotes necessários
+# Modelos Estatísticos
 
-```{r}
-rm(list = ls(all.names = TRUE)) # limpa todos os objetos, incluindo os ocultos
-
-required_packages <- c("janitor",
-                       "tidyverse",
-                       "rio",
-                       "here",
-                       "haven",
-                       "data.table",
-                       "lubridate",
-                       "readxl",
-                       "broom",
-                       "gt",
-                       "gtsummary"
-                       )      
-
-for (pkg in required_packages) {
-  # install packages if not already present
-  if (!pkg %in% rownames(installed.packages())) {
-    install.packages(pkg)
-  }
-  
-  # load packages to this current session 
-  library(pkg, character.only = TRUE)
-}
-remove(required_packages)
-remove(pkg)
-```
-
-# Tabela sumária dos dados
+## Tabela sumária dos dados
 ```{r}
 tabela1 <- tbl_summary(
   inquerito_AVC_2024,
@@ -81,7 +52,7 @@ tabela1 <- tbl_summary(
 tabela1
 ```
 
-# Teste de proporção
+## Teste de proporção
 
 ```{r}
 tabela_teste_proporcao <- tbl_summary(

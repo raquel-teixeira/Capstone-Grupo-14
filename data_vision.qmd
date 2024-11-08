@@ -34,7 +34,9 @@ project:
   output-dir: output/documents
 ---
 
-# Contagem de inquéritos respondidos por UCC pré e pós-intervenção
+# Visualização de Dados
+
+## Contagem de inquéritos respondidos por UCC pré e pós-intervenção
 
 ```{r}
 summary_inquerito_by_ucc$altura_questionario <- factor(summary_inquerito_by_ucc$altura_questionario, 
@@ -53,7 +55,7 @@ grafico_alunos_por_ucc
 
 ```
 
-# Contagem de inquéritos respondidos por agrupamento pré e pós-intervenção
+## Contagem de inquéritos respondidos por agrupamento pré e pós-intervenção
 
 ```{r}
 grafico_alunos_por_agrupamento <- ggplot(data = summary_inquerito_by_agrupamento, aes(x = agrupamento_escolas,
@@ -69,7 +71,7 @@ grafico_alunos_por_agrupamento
 
 ```
 
-# Distribuição dos inquéritos respondidos por sexo pré e pós-intervenção
+## Distribuição dos inquéritos respondidos por sexo pré e pós-intervenção
 
 ```{r}
 inquerito_AVC_2024$altura_questionario <- factor(inquerito_AVC_2024$altura_questionario, 

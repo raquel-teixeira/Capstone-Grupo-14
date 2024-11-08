@@ -24,11 +24,9 @@ project:
   output-dir: outputs/documents
 bibliography: templates/references.bib 
 ---
-
 ```{r}
 projeto = "Dias Comemorativos: Prevenção do AVC"
 ```
-
 **Bem vindo aos "`r projeto`"!**
 
 # Introdução
