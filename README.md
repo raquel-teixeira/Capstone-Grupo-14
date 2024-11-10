@@ -1,4 +1,4 @@
-# **Capstone Grupo 14 - Projeto "Dias Comemorativos: Prevenção AVC"  **
+# Capstone Grupo 14 - Projeto "Dias Comemorativos: Prevenção AVC" 
 
 
 No âmbito do Curso **Fundamentos de Data Science na saúde: aplicações com R** de André Peralta Santos (coordenador), foi proposta a elaboração de um trabalho final (Capstone) com dados do mundo real. 
