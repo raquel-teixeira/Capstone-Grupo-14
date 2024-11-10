@@ -3,6 +3,7 @@ title: "Dashboard Intervenção AVC - Hugo Silva e Raquel Teixeira"
 format: 
   dashboard:
     scrolling: true 
+    orientation: columns
 logo: images/ensp_logo1.png
 theme: [minimal]
 fig-width: 10
@@ -17,6 +18,7 @@ editor_options:
 #| message: false
 #| warning: false
 #| echo: false
+#| include: false
 
 
 # Forma alternativa de instalar vários pacotes e carregá-los
